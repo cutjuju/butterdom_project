@@ -2,10 +2,97 @@
     background-color: burlywood;
 }
 
-
-
-.non-blue.button.text > #firstbutton {
-color:black;
-
-
+.slider-container-custom {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+  background-color: #ffc00a;
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
 }
+
+.sliderimage{
+
+  height:100%
+}
+
+.slider-custom {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  align-items: center; /* Ensures child elements are vertically centered */
+}
+
+
+.slide-custom {
+  height: 130px;
+  text-align: center;
+  line-height: 150px; 
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+  .slider-container-custom {
+    height: 80px; /* Reduced height */
+  }
+
+  .sliderimage{
+    height:100%
+  }
+
+  .slide-custom {
+    font-size: 12px; /* Adjusted font size */
+    line-height: 80px; /* Adjusted vertical centering for reduced height */
+  }
+  
+  .slide-custom:nth-child(2) { 
+    visibility: hidden;}
+  .slide-custom:nth-child(4) { 
+    visibility: hidden;
+  }
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1200px) {
+
+    .slider-container-custom {
+      height: 80px; /* Reduced height */
+      font-size:10px;
+    }
+  
+    .sliderimage{
+      height:100%;
+    }
+  
+    .slide-custom {
+      line-height: 80px; /* Adjusted vertical centering for reduced height */
+      margin:20px
+    }
+    .slide-custom:nth-child(2) { 
+      visibility: hidden;}
+    .slide-custom:nth-child(4) { 
+      visibility: hidden;
+    }
+    }
+
+
+
+
+
+    
