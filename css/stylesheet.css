@@ -1,6 +1,11 @@
 .p-3.text-bg-dark {
     background-color: burlywood;
+}
 
+
+
+.non-blue.button.text > #firstbutton {
+color:black;
 
 
 }
