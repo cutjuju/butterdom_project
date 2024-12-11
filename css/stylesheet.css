@@ -1,3 +1,8 @@
+body{
+  background-color: #fff0e4;
+}
+
+
 .p-3.text-bg-dark {
     background-color: burlywood;
 }
@@ -38,7 +43,7 @@
 
 @keyframes scroll {
   from {
-    transform: translateX(100%);
+    transform: translateX(130%);
   }
   to {
     transform: translateX(-100%);
@@ -91,8 +96,11 @@
     }
     }
 
+.custom-footer{
+  background-color:rgb(106, 67, 25);
+  width:100%;
+  color:blue;
+}
 
 
 
-
-    
