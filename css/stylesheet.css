@@ -103,4 +103,64 @@ body{
 }
 
 
+@media (max-width: 600px){
+  .custom{
+    align-self: center;
+  }
 
+
+
+
+
+
+
+}
+
+
+
+
+.kingofbutter {
+  margin-top: 10px;
+  aspect-ratio: 1 / 1;
+  flex: 0 0 auto;
+  transition: all 0.8s ease;
+}
+.kingofbutter:hover {
+  cursor: pointer;
+  transform: scale(5) rotate(-15deg);
+}
+
+
+
+
+
+
+span.hovercolor-animation:hover { 
+  text-decoration-color: red;
+  text-decoration-line: underline;
+  text-underline-offset: 0.4em;
+  transition-behavior: normal;
+  transition: background-size: ease-in-out;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+
+}
+
+
+
+
+span.hovercolor-animation:hover{
+animation:color-change 2s infinite linear;
+
+}
+
+@keyframes color-change {
+0% {
+  filter: hue-rotate(0deg);
+}
+
+100% {
+  filter: hue-rotate(360deg);
+}
+}
